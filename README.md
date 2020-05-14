@@ -1,1 +1,1 @@
-![](assets/our-lab.jpg)
+![](/assets/our-lab.jpg)
