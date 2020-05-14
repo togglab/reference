@@ -1,1 +1,1 @@
-# lab-reference
+![](assets/our-lab.jpg)
