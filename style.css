@@ -1,0 +1,224 @@
+@font-face {
+  font-family: sfpro-apple;
+  src: url(assets/fonts/SF-Pro-Display-Regular.otf);
+}
+:root {
+  font-family: sfpro-apple;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  /* Root variables for color schemes */
+}
+body {
+  background: #e0e5ec;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+  font-weight: bolder;
+  text-shadow: 9px 9px 16px rgba(255, 255, 255, 0.5);
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+.topbar {
+  margin: 0;
+  padding: 0;
+  background-color: #f9fcfb;
+}
+.navlinks {
+  list-style: none;
+  display: flex;
+}
+.forms,
+form {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.cont {
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 8px;
+  background: #e0e5ec;
+  box-shadow: 9px 9px 16px rgb(163, 177, 198, 0.6),
+    -9px -9px 16px rgba(255, 255, 255, 0.5);
+}
+.margins {
+  padding: 0rem;
+  margin: 0rem;
+}
+.btn {
+  display: block;
+  border: solid 0px;
+  border-radius: 8px;
+  padding: 20px 20px;
+  margin: 1rem;
+  font-weight: bolder;
+  font-family: sfpro-apple;
+  background: #e0e5ec;
+  box-shadow: 9px 9px 16px rgb(163, 177, 198, 0.6),
+    -9px -9px 16px rgba(255, 255, 255, 0.5);
+  outline: none;
+  transition: ease-in-out 250ms;
+}
+.btn:hover {
+  box-shadow: -9px -9px 16px rgb(163, 177, 198, 0.6),
+    +9px +9px 16px rgba(255, 255, 255, 0.5);
+  outline: none;
+}
+.form-ctrl {
+  margin: 1rem;
+  border: solid 0px;
+  border-radius: 5px;
+  padding: 20px 20px;
+  background: #e0e5ec;
+  font-family: sfpro-apple;
+  font-weight: 500;
+  box-shadow: 9px 9px 16px rgb(163, 177, 198, 0.6),
+    -9px -9px 16px rgba(255, 255, 255, 0.5);
+  outline: none;
+}
+.form-ctrl::placeholder {
+  font-family: sfpro-apple;
+  font-weight: 500;
+}
+.form-area {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.form-label {
+  margin: 1rem;
+  font-weight: 550;
+}
+.card {
+  margin: 1rem;
+  border-radius: 8px;
+  background: #e0e5ec;
+  box-shadow: 9px 9px 16px rgb(163, 177, 198, 0.6),
+    -9px -9px 16px rgba(255, 255, 255, 0.5);
+}
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.switch {
+  outline: none;
+  margin: 1rem;
+  border-radius: 8px;
+  box-shadow: 9px 9px 16px rgb(163, 177, 198, 0.6),
+    -9px -9px 16px rgba(255, 255, 255, 0.5);
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+.slider {
+  outline: none;
+  border-radius: 8px;
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #e0e5ec;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.slider:before {
+  border-radius: 50%;
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: #f9fcfb;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+input:checked + .slider {
+  background-color: #21bf73;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #21bf73;
+}
+a {
+  margin: inherit;
+  text-decoration: none;
+  text-decoration-color: inherit;
+  outline: none;
+  border: none;
+}
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+.form-ctrl::-webkit-file-upload-button {
+  display: block;
+  border: solid 0px;
+  margin-right: 2rem;
+  border-radius: 8px;
+  padding: 10px 10px;
+  font-weight: bolder;
+  font-family: sfpro-apple;
+  background: #e0e5ec;
+  box-shadow: 9px 9px 16px rgb(163, 177, 198, 0.6),
+    -9px -9px 16px rgba(255, 255, 255, 0.5);
+  outline: none;
+  transition: ease-in-out 250ms;
+}
+.form-ctrl::-webkit-file-upload-button:hover {
+  box-shadow: -9px -9px 16px rgb(163, 177, 198, 0.6),
+    +9px +9px 16px rgba(255, 255, 255, 0.5);
+  outline: none;
+}
+
+.card-img {
+  border-radius: 8px;
+  width: 100%;
+  height: auto;
+}
+.card-header {
+  padding: 0.5rem;
+}
+.card-content {
+  display: block;
+  padding: 1rem;
+}
+.cont-fluid {
+  display: flex;
+  flex-direction: column;
+}
+
+@media only screen and (min-width: 600px) {
+  .margins {
+    margin: 2rem;
+    padding: 2rem;
+  }
+  .form-ctrl {
+    width: fit-content;
+  }
+  .btn {
+    width: fit-content;
+  }
+  .cont {
+    padding: 2rem;
+    margin: 2rem;
+  }
+  .cont-fluid {
+    flex-direction: row;
+    flex-wrap: inherit;
+  }
+}
