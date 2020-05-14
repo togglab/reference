@@ -1,1 +1,1 @@
-xcx
+![](our-lab.jpg)
